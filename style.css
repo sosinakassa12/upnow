@@ -1,14 +1,79 @@
+
 body {
-  font-family: sans-serif;
-  padding: 2rem;
-  background-color: #fef6f9;
-  color: #222;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1f1f2e;
+  color: #f0f0f0;
 }
-button {
-  padding: 10px 20px;
-  background: hotpink;
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  color: #ff69b4;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.mood-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mood-buttons button {
+  padding: 0.8rem 1.2rem;
   border: none;
-  color: white;
-  font-size: 1rem;
+  background-color: #ff69b4;
+  color: black;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.mood-buttons button:hover {
+  background-color: #e0558a;
+}
+
+#suggestion-box {
+  background: #2c2c3d;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-top: 2rem;
+}
+
+#suggestion {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #ffddee;
+}
+
+#new-suggestion {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  background-color: #e0558a;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 6rem;
+  font-size: 0.9rem;
+  color: #888;
 }

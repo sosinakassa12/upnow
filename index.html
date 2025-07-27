@@ -2,16 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Upnow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upnow – What Should I Do Now?</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <div id="app">
-    <h1>What Should I Do Now?</h1>
-    <button id="suggest-btn">Give me something impactful</button>
-    <div id="suggestion"></div>
+  <div class="container">
+
+    <header>
+      <h1>Upnow</h1>
+      <p class="tagline">What Should I Do Now?</p>
+    </header>
+
+    <section class="moods">
+      <h2>How do you feel?</h2>
+      <div class="mood-buttons">
+        <button data-mood="tired">😴 Tired</button>
+        <button data-mood="motivated">💪 Motivated</button>
+        <button data-mood="bored">😶 Bored</button>
+        <button data-mood="curious">🧠 Curious</button>
+        <button data-mood="overwhelmed">🤯 Overwhelmed</button>
+        <button data-mood="creative">🎨 Creative</button>
+      </div>
+    </section>
+
+    <section id="suggestion-box">
+      <h2>Here’s something to do:</h2>
+      <div id="suggestion"></div>
+      <button id="new-suggestion">Try Something Else</button>
+    </section>
+
+    <footer>
+      <p>Made with 💻 and ☕ by Sosina</p>
+    </footer>
+
   </div>
+
   <script src="./app.js" type="module"></script>
 </body>
 </html>
